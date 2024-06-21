@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IX Jornadas Informáticas</title>
+    <link rel="shortcut icon" href="images/logo4.png" type="image/x-icon">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Yellowtail&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+ <!-- Navegación -->
+ <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="images/logo-nav.png"  class="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" ></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#inicio">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#ejes-tematicos">Ejes Temáticos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#ponentes">Ponentes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#agenda">Agenda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Portada -->
+<header id="inicio" class="portada d-flex align-items-center">
+    <div class="container p-4">
+        <div class="row align-items-center">
+            <div class="col-md-7 text-center text-md-left text-white">
+                <h1 class="custom-title animate__animated animate__fadeInDown">
+                    <span class="part1">IX</span> 
+                    <span class="part2">Jornadas</span> 
+                    <span class="part3">Informáticas</span>
+                </h1>
+                <h3 class="text-lead font-weight-bold">Capacitación académica de ingeniería en sistemas de información </h3>
+                <div class="col-md-10">
+                    <div class="row">
+                        <!-- Código agregado debajo del botón de contacto -->
+                        <div class="scroller" data-speed="fast">
+                            <ul class="tag-list scroller__inner">
+                                <li><img src="images/logo1.png" alt="Extensión La Mana"></li>
+                                <li><img src="images/logo2.png" alt="UTC"></li>
+                                <li><img src="images/logo3.png" alt="JavaScript"></li>
+                                <li><img src="images/logo4.png" alt="PHP"></li>
+
+                                <li><img src="images/logo2.png" alt="SQL"></li>
+                                <li><img src="images/logo1.png" alt="Laravel"></li>
+                                <li><img src="images/logo3.png" alt="UI/UX"></li>
+                            </ul>
+                           
+                       </div>
+                    </div>
+                  
+                </div>
+                
+         
+           <script>
+            const scrollers = document.querySelectorAll(".scroller");
+        
+        // If a user hasn't opted in for recuded motion, then we add the animation
+        if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+          addAnimation();
+        }
+        
+        function addAnimation() {
+          scrollers.forEach((scroller) => {
+            // add data-animated="true" to every `.scroller` on the page
+            scroller.setAttribute("data-animated", true);
+        
+            // Make an array from the elements within `.scroller-inner`
+            const scrollerInner = scroller.querySelector(".scroller__inner");
+            const scrollerContent = Array.from(scrollerInner.children);
+        
+            // For each item in the array, clone it
+            // add aria-hidden to it
+            // add it into the `.scroller-inner`
+            scrollerContent.forEach((item) => {
+              const duplicatedItem = item.cloneNode(true);
+              duplicatedItem.setAttribute("aria-hidden", true);
+              scrollerInner.appendChild(duplicatedItem);
+            });
+          });
+        }
+        
+        </script>                   
+            </div>
+            <div class="col-md-5 text-dark">
+                <div class="d-flex flex-column">
+                    <div class="mb-4 p-4 shadow rounded" style="background-color: #ffffff6b;">
+                        <h4 class="mb-2 font-weight-bold text-lead-grey">Evento Internacional</h4>
+                        <p class="lead mb-1">Fechas y Duración:</p>
+                        <p class="lead mb-0">Del 08 al 12 de Julio de 2024</p>
+                    </div>
+                    <div class="p-4 shadow rounded" style="background-color: #ffffff6c;">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-video fa-lg mr-2 text-secondary"></i>
+                            <span class="font-weight-bold">Plataforma: Zoom</span>
+                        </div>
+                        <div>
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fas fa-clock fa-lg mr-2 text-secondary"></i>
+                                <span class="font-weight-bold">Zonas Horarias:</span>
+                            </div>
+                            <div class="d-flex flex-wrap">
+                                <div class="mr-2 mb-3">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Flag_of_Ecuador.svg" alt="Bandera de Ecuador" width="30" height="20">
+                                    <span class="ml-2 "> 8:00 AM - 12:00 PM <b>|</b> 1:00 PM - 5:00 PM (EC)</span>
+                                </div>
+                                <div class="mr-2 mb-3">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_Argentina.svg" alt="Bandera de Argentina" width="30" height="20">
+                                    <span class="ml-2">9:00 AM - 1:00 PM <b>|</b> 2:00 PM - 6:00 PM (AR)</span>
+                                </div>
+                                <div class="mr-2 mb-3">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg" alt="Bandera de Brasil" width="30" height="20">
+                                    <span class="ml-2">10:00 AM - 2:00 PM <b>|</b> 3:00 PM - 7:00 PM (BR)</span>
+                                </div>
+                                <div class="mr-2 mb-2">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Bandera_de_Espa%C3%B1a.svg" alt="Bandera de España" width="30" height="20">
+                                    <span class="ml-2">3:00 PM - 7:00 PM <b>|</b> 8:00 PM - 12:00 AM (ES)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+</header>
+<section id="ejes-tematicos" >
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-7">
+                <h2 class="mb-3 lead-title ">Ejes Temáticos</h2>
+                <div class="hr-custom mb-3"></div>
+                <p class="lead  ">El congreso abordará las últimas tendencias y avances en los siguientes campos clave de la tecnología y la innovación. Nuestros expositores compartirán sus conocimientos y experiencias en estas áreas estratégicas para el futuro del desarrollo tecnológico y empresarial.</p>
+                <ul class="list-unstyled">
+                    <li class="mb-2">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-chevron-right text-danger mr-3"></i>
+                            <span class="font-weight-bold  text-lead-grey">Inteligencia Artificial</span>
+                        </div>
+                    </li>
+                    <li class="mb-2">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-chevron-right  text-danger mr-3"></i>
+                            <span class="font-weight-bold  text-lead-grey">Minería de Datos</span>
+                        </div>
+                    </li>
+                    <li class="mb-2">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-chevron-right  text-danger mr-3"></i>
+                            <span class="font-weight-bold  text-lead-grey">Hacking Ético</span>
+                        </div>
+                    </li>
+                    <li class="mb-2">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-chevron-right text-primary mr-3"></i>
+                            <span class="font-weight-bold  text-lead-grey">Ciencia de Datos</span>
+                        </div>
+                    </li>
+                    <li class="mb-2">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-chevron-right  text-danger mr-3"></i>
+                            <span class="font-weight-bold  text-lead-grey">Inteligencia de Negocios</span>
+                        </div>
+                    </li>
+                    <li class="mb-2">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-chevron-right  text-danger mr-3"></i>
+                            <span class="font-weight-bold  text-lead-grey ">Big Data</span>
+                        </div>
+                    </li>
+                    <li class="mb-2">
+                      <div class="d-flex align-items-center">
+                          <i class="fas fa-chevron-right   text-danger mr-3"></i>
+                          <span class="font-weight-bold  text-lead-grey ">IoT</span>
+                      </div>
+                  </li>
+                </ul>
+            </div>
+            <div class="col-md-5">
+                <img src="images/Group video-pana.png" alt="Vector Tecnología" class="img-fluid">
+            </div>
+        </div>
+      </div>
+</section>
+
+<section id="ponentes" class="bg-section">
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-12 mb-3">
+                <h2 class="lead-title mt-3">Ponentes Destacados</h2>
+                <div class="hr-custom mb-3"></div>
+                <p class="lead">Conozca a los expertos que compartirán su conocimiento y experiencia en este evento.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow card-hover" data-name="Nombre del Ponente"  data-image="images/ponente1.jpeg" onclick="showOverlay(this)">
+                    <img src="images/ponente1.jpeg" class="card-img-top" alt="Imagen del Ponente">
+                   
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow card-hover" data-name="Nombre del Ponente"  data-image="images/ponente2.jpeg" onclick="showOverlay(this)">
+                    <img src="images/ponente2.jpeg" class="card-img-top" alt="Imagen del Ponente">
+                   
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow card-hover" data-name="Nombre del Ponente"  data-image="images/ponente3.jpeg" onclick="showOverlay(this)">
+                    <img src="images/ponente3.jpeg" class="card-img-top" alt="Imagen del Ponente">
+                   
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow card-hover" data-name="Nombre del Ponente"  data-image="images/ponente4.jpeg" onclick="showOverlay(this)">
+                    <img src="images/ponente4.jpeg" class="card-img-top" alt="Imagen del Ponente">
+                   
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow card-hover" data-name="Nombre del Ponente"  data-image="images/ponente5.jpeg" onclick="showOverlay(this)">
+                    <img src="images/ponente5.jpeg" class="card-img-top" alt="Imagen del Ponente">
+                   
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow card-hover" data-name="Nombre del Ponente"  data-image="images/ponente6.jpeg" onclick="showOverlay(this)">
+                    <img src="images/ponente6.jpeg" class="card-img-top" alt="Imagen del Ponente">
+                   
+                </div>
+            </div>
+            <!-- Otras tarjetas... -->
+        </div>
+    </div>
+    <div id="overlay" class="overlay">
+        <div class="overlay-content">
+            <span class="close" onclick="hideOverlay()">&times;</span>
+            <img id="overlay-image" src="">
+           
+        </div>
+    </div>
+    <script>
+        function showOverlay(card) {
+        const name = card.getAttribute('data-name');
+     
+        const image = card.getAttribute('data-image');
+    
+        document.getElementById("overlay-image").src = image;
+    
+        document.getElementById("overlay").style.display = "flex";
+    }
+    
+    function hideOverlay() {
+        document.getElementById("overlay").style.display = "none";
+    }
+    
+    </script>
+</section>
+
+<section id="agenda">
+    
+   
+      <div class="container my-5">
+        <h2 class="lead-title mb-3" >Agenda de Actividades</h2>
+        <div class="hr-custom mb-3"></div>
+        <p class="lead">Aquí encontrarás el cronograma completo de actividades y ponencias para nuestro congreso anual.</p>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="monday-tab" data-toggle="tab" href="#monday" role="tab" aria-controls="monday" aria-selected="true">Lunes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="tuesday-tab" data-toggle="tab" href="#tuesday" role="tab" aria-controls="tuesday" aria-selected="false">Martes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="wednesday-tab" data-toggle="tab" href="#wednesday" role="tab" aria-controls="wednesday" aria-selected="false">Miércoles</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="thursday-tab" data-toggle="tab" href="#thursday" role="tab" aria-controls="thursday" aria-selected="false">Jueves</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="friday-tab" data-toggle="tab" href="#friday" role="tab" aria-controls="friday" aria-selected="false">Viernes</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane  fade mt-4 show active" id="monday" role="tabpanel" aria-labelledby="monday-tab">
+            <table class="schedule-table table-bordered table-hover ">
+              <thead>
+                <tr>
+                  <th><i class="fas fa-clock"></i>Hora</th>
+                  <th><i class="fas fa-user"></i>Ponente</th>
+                  <th><i class="fas fa-comment"></i>Tema</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>8:00 AM</td>
+                  <td>Juan Pérez</td>
+                  <td>Introducción al Congreso</td>
+                </tr>
+                <tr>
+                  <td>10:00 AM</td>
+                  <td>María Rodríguez</td>
+                  <td>Tendencias en el Sector</td>
+                </tr>
+                <tr>
+                  <td>12:00 PM</td>
+                  <td>Pedro González</td>
+                  <td>Estrategias de Marketing</td>
+                </tr>
+                <tr>
+                  <td>2:00 PM</td>
+                  <td>Ana López</td>
+                  <td>Casos de Éxito</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="tab-pane fade" id="tuesday" role="tabpanel" aria-labelledby="tuesday-tab">
+            <!-- Contenido para el día martes -->
+          </div>
+          <div class="tab-pane fade" id="wednesday" role="tabpanel" aria-labelledby="wednesday-tab">
+            <!-- Contenido para el día miércoles -->
+          </div>
+          <div class="tab-pane fade" id="thursday" role="tabpanel" aria-labelledby="thursday-tab">
+            <!-- Contenido para el día jueves -->
+          </div>
+          <div class="tab-pane fade" id="friday" role="tabpanel" aria-labelledby="friday-tab">
+            <!-- Contenido para el día viernes -->
+          </div>
+        </div>
+      </div>
+  </section>
+  <footer id="footer" class=" text-white py-5">
+    <div class="container" id="contacto">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <h5 class="text-uppercase mb-3">Información de Contacto</h5>
+                <div class="hr-custom mb-3"></div>
+                <p>
+                    <i class="fas fa-map-marker-alt mr-2"></i> Dirección: UTC, Ecuador, La Maná
+                </p>
+                <p>
+                    <i class="fas fa-phone-alt mr-2"></i> Teléfono:  (593) 03 2252205 / 2252307
+                </p>
+                <p>
+                    <i class="fas fa-envelope mr-2"></i> Correo Electrónico: direccion.sistemaslm@utc.edu.ec
+                </p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <h5 class="text-uppercase mb-3">Síguenos</h5>
+                <div class="hr-custom mb-3"></div>
+                <ul class="list-unstyled social-icons">
+                    <li><a href="#" class="text-light"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                    
+                </ul>
+            </div>
+            <div class="col-md-4 mb-4">
+                <h5 class="text-uppercase mb-3">Boletín Informativo</h5>
+                <div class="hr-custom mb-3"></div>
+                <form>
+                    <input type="email" class="form-control mb-2" placeholder="Tu mensaje" required>
+                    <button type="submit" class="btn btn-primary btn-block">Enviar mensaje</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="text-center py-4 border-top border-light">
+        <small>© 2024 Universidad Técnica de Cotopaxi, Extensión La Mana. Todos los derechos reservados.</small>
+    </div>
+</footer>
+
+  
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.querySelectorAll('.navbar-nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                const offsetPosition = targetElement.offsetTop - 70; // Ajuste de 70px para el navbar
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
